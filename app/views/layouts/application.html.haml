@@ -40,12 +40,12 @@
               %li= link_to "Home", root_path
     .container-fluid
       .row-fluid
-        .span3
-          
         .span9
           = bootstrap_flash
           = yield
+        .span3
+          / Sidebar
     %hr
       %footer
-        %p © Company 2012
+        %p &copy;
 

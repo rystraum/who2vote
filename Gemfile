@@ -7,6 +7,7 @@ gem 'devise'
 gem 'mysql2'
 
 gem 'rails_admin'
+gem 'cancan'
 
 gem 'capistrano'
 gem 'rvm-capistrano'

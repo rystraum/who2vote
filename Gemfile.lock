@@ -33,6 +33,7 @@ GEM
     bcrypt-ruby (3.0.1)
     bootstrap-sass (2.0.4.2)
     builder (3.0.4)
+    cancan (1.6.7)
     capistrano (2.13.5)
       highline
       net-scp (>= 1.0.0)
@@ -169,6 +170,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cancan
   capistrano
   coffee-rails (~> 3.2.1)
   devise
