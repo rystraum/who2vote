@@ -13,6 +13,7 @@ gem 'capistrano'
 gem 'rvm-capistrano'
 
 gem 'thin'
+gem 'pry'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
