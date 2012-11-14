@@ -1,0 +1,16 @@
+.well
+  %h4 Sort by issue:
+  = form_tag filter_path, method: :get do
+    - for issue in @issues
+      %h6= issue.name
+      %label.checkbox
+        = check_box_tag "issues[#{issue.id}][pro]", 1, instance_variable_get("@pro_#{issue.id}")
+        Pro
+      %label.checkbox
+        = check_box_tag "issues[#{issue.id}][anti]", 1, instance_variable_get("@anti_#{issue.id}")
+        Anti
+      %label.checkbox
+        = check_box_tag "issues[#{issue.id}][neutral]", 1, instance_variable_get("@neutral_#{issue.id}")
+        Neutral
+    
+    = submit_tag "Filter", class: "btn btn-primary"
