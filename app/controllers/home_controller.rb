@@ -4,7 +4,7 @@ class HomeController < ApplicationController
   end
 
   def filter
-    @politicians = Politician.get_by_stance get_issues_and_stances
+    @politicians = Politician.get_by_stance(get_issues_and_stances) rescue Politician.all
     render "index"
   end
 
