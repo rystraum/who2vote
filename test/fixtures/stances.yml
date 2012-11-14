@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  politician: 
+  issue: 
+  stance: 1
+
+two:
+  politician: 
+  issue: 
+  stance: 1
