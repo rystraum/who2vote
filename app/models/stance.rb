@@ -7,7 +7,7 @@ class Stance < ActiveRecord::Base
   delegate :name, to: :politician, prefix: true
   delegate :name, to: :issue, prefix: true
 
-  def for?
+  def pro?
     stance > 0
   end
   def anti?
