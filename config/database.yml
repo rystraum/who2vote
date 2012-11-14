@@ -1,0 +1,24 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: who2vote_dev
+  username: root
+  password: 
+  socket: /var/run/mysqld/mysqld.sock
+  reconnect: true
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: who2vote_testing
+  username: root
+  password:
+  socket: /var/run/mysqld/mysqld.sock
+  reconnect: true
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: who2vote
+  username: who2vote
+  password: TaLgx694nL3EKL0IGB3vsMUZ
