@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121114113416) do
+ActiveRecord::Schema.define(:version => 20121114115726) do
 
   create_table "issues", :force => true do |t|
     t.string   "name"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20121114113416) do
   end
 
   add_index "stances", ["issue_id"], :name => "index_stances_on_issue_id"
+  add_index "stances", ["politician_id", "issue_id"], :name => "index_stances_on_politician_id_and_issue_id", :unique => true
   add_index "stances", ["politician_id"], :name => "index_stances_on_politician_id"
 
   create_table "users", :force => true do |t|

@@ -1,0 +1,12 @@
+- if stance.for?
+  %button.btn.btn-success.for
+    %i.icon-thumbs-up
+    #{stance.issue_name}
+
+- elsif stance.anti?
+  %button.btn.btn-danger.anti
+    %i.icon-thumbs-down.icon-white
+    #{stance.issue_name}
+
+- else
+  %button.btn #{stance.issue_name}
